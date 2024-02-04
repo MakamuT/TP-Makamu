@@ -8,88 +8,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.loader{
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 50px);
-}
-.loader-container{
-    height: 50px;
-    width: 100px;
-    position: absolute;
-    overflow: hidden;
-    animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
-    transform-origin: 50% 100%;
-}
-.line{
-    border: 3px solid transparent;
-    border-radius: 100%;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-}
-.line1{
-    border-color: violet;
-    height: 100px;
-    width: 100px;
-    top: 7px;
-}
-.line2{
-    border-color: indigo;
-    height: 86px;
-    width: 86px;
-    top: 14px;
-}
-.line3{
-    border-color: blue;
-    height: 72px;
-    width: 72px;
-    top: 21px;
-}
-.line4{
-    border-color: green;
-    height: 58px;
-    width: 58px;
-    top: 28px;
-}
-.line5{
-    border-color: blue;
-    height: 44px;
-    width: 44px;
-    top: 35px;
-}
-.line6{
-    border-color: orange;
-    height: 100px;
-    width: 100px;
-    top: 7px;
-}
-@keyframes spin{
-    0%, 15%{transform: rotate(0);}
-    85%, 100%{transform: rotate(360deg);}
-}
-.loader-container :nth-child(1){
-    animation-delay: -50ms;
-}
-.loader-container :nth-child(2){
-    animation-delay: -100ms;
-}
-.loader-container :nth-child(3){
-    animation-delay: -150ms;
-}
-.loader-container :nth-child(4){
-    animation-delay: -200ms;
-}
-.loader-container :nth-child(5){
-    animation-delay: -250ms;
-}
-.loader-container :nth-child(6){
-    animation-delay: -300ms;
-}
-/* dropdown menu */
+/* navbar */
 .dropdown{
     display: inline-block;
 }
@@ -97,7 +16,8 @@ body{
     background-color: darkorchid;
     color: lavenderblush;
     padding: 10px 10px;
-    border: none;
+    border-radius: 5px;
+    border: darkorchid;
     cursor: pointer;
 }
 .dropdown a{
@@ -124,4 +44,14 @@ body{
     background-color: blueviolet;
     box-shadow: 2px 2px 5px lavenderblush;
     scale: 1.2;
+}
+/* Home page */
+#home{
+    margin-top: 10rem;
+    background: #ffffff0d;
+    box-shadow: 0 1px 3px 0 lavenderblush;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: .5px solid lavenderblush;
 }
