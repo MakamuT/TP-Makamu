@@ -1,3 +1,4 @@
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
 body{
     margin: 0;
     padding: 0;
@@ -46,12 +47,69 @@ body{
     scale: 1.2;
 }
 /* Home page */
-#home{
-    margin-top: 10rem;
-    background: #ffffff0d;
-    box-shadow: 0 1px 3px 0 lavenderblush;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 20px;
-    border: .5px solid lavenderblush;
+.name{
+    color: beige;
+    text-align: center;
+    background-color: transparent;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    height: 500px;
+    margin: 50px;
+    /**box-shadow: 5px 5px 20px lavenderblush;**/
+    overflow: hidden;
+}
+img{
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+}
+.text{
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 240px;
+    background: transparent;
+    color: black;
+}
+h1{
+    margin: 15px;
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card :hover{
+    cursor: pointer;
+
+}
+.card:hover .text{
+    height: 220px;
+    bottom: 240px;
+    background: transparent;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+/**About **/
+
+/**Scrollbar**/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: lavenderblush;
+}
+::-webkit-scrollbar-thumb{
+    background:plum;
+    border-radius: 10px;
 }
