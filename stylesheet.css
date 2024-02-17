@@ -5,9 +5,7 @@ body{
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
-    background-image: url("20230221_051213.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: lavenderblush;
 }
 /* navbar */
 .dropdown{
@@ -47,11 +45,6 @@ body{
     scale: 1.2;
 }
 /* Home page */
-.name{
-    color: beige;
-    text-align: center;
-    background-color: transparent;
-}
 .container{
     display: flex;
     justify-content: center;
@@ -59,7 +52,7 @@ body{
 .card{
     height: 500px;
     margin: 50px;
-    /**box-shadow: 5px 5px 20px lavenderblush;**/
+    box-shadow: 5px 5px 20px plum;
     overflow: hidden;
 }
 img{
@@ -81,7 +74,7 @@ h1{
     margin: 15px;
     font-size: 40px;
 }
-p{
+.text p{
     font-size: 20px;
     margin: 20px;
     visibility: hidden;
@@ -101,7 +94,24 @@ p{
     visibility: visible;
 }
 /**About **/
-
+.name{
+    color: black;
+    text-transform: uppercase;
+}
+.box{
+    display: grid;
+    grid-column: 100px;
+    grid-row: 150px;
+}
+/** footer **/
+footer{
+    background-color: plum;
+    position: fixed;
+}
+.quote{
+    color: black;
+    font-size: 5px;
+}
 /**Scrollbar**/
 ::-webkit-scrollbar{
     width: 15px;
