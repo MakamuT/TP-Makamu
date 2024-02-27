@@ -1,125 +1,242 @@
-@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
-    background-color: lavenderblush;
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("20230221_051213.jpg");
 }
 /* navbar */
-.dropdown{
-    display: inline-block;
+.dropdown {
+  display: inline-block;
+  /**position: fixed;**/
 }
-.dropdown button{
-    background-color: darkorchid;
-    color: lavenderblush;
-    padding: 10px 10px;
-    border-radius: 5px;
-    border: darkorchid;
-    cursor: pointer;
+.dropdown button {
+  position: fixed;
+  background-color: darkorchid;
+  color: lavenderblush;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: darkorchid;
+  cursor: pointer;
 }
-.dropdown a{
-    display: block;
-    color: blanchedalmond;
-    text-decoration: none;
-    padding: 10px 15px;
+.dropdown a {
+  display: block;
+  color: blanchedalmond;
+  text-decoration: none;
+  padding: 10px 15px;
 }
-.dropdown .navlink{
-    display: none;
-    position: absolute;
-    background-color: mediumpurple;
-    min-width: 100px;
-    box-shadow: 2px 2px 5px lavenderblush;
+.dropdown .navlink {
+  display: none;
+  position: absolute;
+  background-color: mediumpurple;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px lavenderblush;
 }
-.dropdown:hover .navlink{
-    display: block;
+.dropdown:hover .navlink {
+  display: block;
 }
-.dropdown:hover button{
-    background-color: darkmagenta;
-    scale: 1.2;
+.dropdown:hover button {
+  background-color: darkmagenta;
+  scale: 1.2;
 }
-.dropdown a:hover{
-    background-color: blueviolet;
-    box-shadow: 2px 2px 5px lavenderblush;
-    scale: 1.2;
+.dropdown a:hover {
+  background-color: blueviolet;
+  box-shadow: 2px 2px 5px lavenderblush;
+  scale: 1.2;
 }
 /* Home page */
-.container{
-    display: flex;
-    justify-content: center;
+.container {
+  display: flex;
+  justify-content: right;
 }
-.card{
-    height: 500px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px plum;
-    overflow: hidden;
+.card {
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px plum;
+  overflow: hidden;
 }
-img{
-    height: 500px;
-    width: 350px;
-    border-radius: 3px;
+img {
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
 }
-.text{
-    height: 200px;
-    width: 350px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 240px;
-    background: transparent;
-    color: black;
+.text {
+  height: 200px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 240px;
+  background: transparent;
+  color: black;
 }
-h1{
-    margin: 15px;
-    font-size: 40px;
+h1 {
+  margin: 15px;
+  font-size: 40px;
 }
-.text p{
-    font-size: 20px;
-    margin: 20px;
-    visibility: hidden;
-    opacity: 0;
+.text p {
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
 }
-.card :hover{
-    cursor: pointer;
-
+.card :hover {
+  cursor: pointer;
 }
-.card:hover .text{
-    height: 220px;
-    bottom: 240px;
-    background: transparent;
+.card:hover .text {
+  height: 220px;
+  bottom: 240px;
+  background: transparent;
 }
-.card:hover p{
-    opacity: 1;
-    visibility: visible;
+.card:hover p {
+  opacity: 1;
+  visibility: visible;
 }
 /**About **/
-.name{
-    color: black;
-    text-transform: uppercase;
+#about {
+  background-color: lavenderblush;
 }
-.box{
-    display: grid;
-    grid-column: 100px;
-    grid-row: 150px;
+.name {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
 }
-/** footer **/
-footer{
-    background-color: plum;
-    position: fixed;
+.box {
+  display: flex;
+  flex-direction: row;
 }
-.quote{
-    color: black;
-    font-size: 5px;
+.box2 {
+  display: inline;
+  justify-content: right;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 1px;
+}
+.innerbox {
+  display: inline;
+  justify-content: left;
+  box-sizing: border-box;
+  background-color: lavenderblush;
+  border: 2px solid mediumorchid;
+  border-radius: 5px;
+  padding: 1px;
+  text-align: left;
+  font-size: 18px;
+}
+.innerbox a {
+  color: mediumpurple;
+  font-style: italic;
+  font-family: cursive;
+}
+/**Contact**/
+#contact {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /**background: linear-gradient(to bottom, mediumpurple, lavenderblush);**/
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  z-index: 2;
+  border-top: 1px solid #ffffff80;
+  background: #ffffff1a;
+  backdrop-filter: blur(10px);
+}
+.color {
+  position: absolute;
+  filter: blur(150px);
+}
+.color:nth-child(1) {
+  top: -350px;
+  width: 600px;
+  height: 600px;
+}
+.color:nth-child(2) {
+  bottom: -150px;
+  left: 100;
+  width: 500px;
+  height: 500px;
+  background: plum;
+}
+.color:nth-child(3) {
+  bottom: -150px;
+  right: 0;
+  width: 300px;
+  height: 300px;
+}
+#contact ul {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+#contact li {
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#contact a {
+  z-index: 2;
+  position: relative;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  font-size: 5em;
+  background: #ffffff1a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff66;
+  border-right: 1px solid #ffffff66;
+  border-bottom: 1px solid #ffffff33;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 45px #0000001a;
+  text-decoration: none;
+  overflow: hidden;
+  transition: top 0.5s, z-index 0s, transform 0.5s;
+  transition-delay: 0.5s;
+}
+#contact a::before {
+  content: "";
+  width: 50px;
+  height: 100%;
+  background: #ffffff80;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(60deg) translateX(170px);
+  transition: 0.5s;
+}
+#contact a {
+  z-index: 1;
+}
+#contact a:hover {
+  z-index: 3;
+  top: -50px;
+  transition-delay: 0s 0.5s, 0.5s;
+  transform: translateY(50px);
+}
+#contact a:hover::before {
+  transform: skewX(45deg) translateX(-150px);
 }
 /**Scrollbar**/
-::-webkit-scrollbar{
-    width: 15px;
+::-webkit-scrollbar {
+  width: 15px;
 }
-::-webkit-scrollbar-track{
-    background: lavenderblush;
+::-webkit-scrollbar-track {
+  background: lavenderblush;
 }
-::-webkit-scrollbar-thumb{
-    background:plum;
-    border-radius: 10px;
+::-webkit-scrollbar-thumb {
+  background: plum;
+  border-radius: 10px;
 }
