@@ -5,15 +5,13 @@ body {
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
-  background-image: url("20230221_051213.jpg");
+  background: lavenderblush;
 }
 /* navbar */
 .dropdown {
   display: inline-block;
-  /**position: fixed;**/
 }
 .dropdown button {
-  position: fixed;
   background-color: darkorchid;
   color: lavenderblush;
   padding: 10px 10px;
@@ -49,8 +47,26 @@ body {
 /* Home page */
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: right;
 }
+.stackimg {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-right: 280px;
+  margin-top: 80px;
+}
+.stack li {
+  display: inline-block;
+  position: relative;
+  margin: 0.15rem;
+}
+.stackimg img {
+  width: 80px;
+  height: 80px;
+}
+
 .card {
   height: 500px;
   margin: 50px;
@@ -110,10 +126,16 @@ h1 {
 .box2 {
   display: inline;
   justify-content: right;
+  margin-left: -39rem;
+  position: absolute;
+}
+.block {
+  height: 25px;
+  width: 25px;
+  align-items: center;
+  padding: 100px 0px;
+  border: 2px solid black;
   box-sizing: border-box;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  padding: 1px;
 }
 .innerbox {
   display: inline;
@@ -166,7 +188,6 @@ h1 {
   left: 100;
   width: 500px;
   height: 500px;
-  background: plum;
 }
 .color:nth-child(3) {
   bottom: -150px;
@@ -181,8 +202,11 @@ h1 {
 }
 #contact li {
   list-style: none;
+  color: white;
   -webkit-tap-highlight-color: transparent;
+  font-size: 5px;
 }
+
 #contact a {
   z-index: 2;
   position: relative;
