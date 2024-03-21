@@ -123,38 +123,47 @@ h1 {
   display: flex;
   flex-direction: row;
 }
-.box2 {
-  display: inline;
-  justify-content: right;
-  margin-left: -39rem;
-  position: absolute;
-}
-.block {
-  height: 25px;
-  width: 25px;
-  align-items: center;
-  padding: 100px 0px;
-  border: 2px solid black;
-  box-sizing: border-box;
-}
+
 .innerbox {
   display: inline;
   justify-content: left;
+  position: relative;
   box-sizing: border-box;
-  background-color: lavenderblush;
+  width: 50rem;
   border: 2px solid mediumorchid;
   border-radius: 5px;
   padding: 1px;
   text-align: left;
   font-size: 18px;
 }
+
 .innerbox a {
   color: mediumpurple;
   font-style: italic;
   font-family: cursive;
 }
+.minbox {
+  box-sizing: content-box;
+  border: 3px solid mediumorchid;
+  border-radius: 5px;
+  margin-left: 25px;
+  text-align: left;
+}
+.items {
+  list-style: none;
+  font-family: fantasy;
+}
 /**Contact**/
-#contact {
+#contactinfo {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+#digits {
+  list-style: none;
+  font-weight: 900;
+  color: purple;
+}
+.contactbox {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -163,7 +172,7 @@ h1 {
   align-items: center;
   /**background: linear-gradient(to bottom, mediumpurple, lavenderblush);**/
 }
-#contact::before {
+.contactbox::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -195,19 +204,19 @@ h1 {
   width: 300px;
   height: 300px;
 }
-#contact ul {
+.contactbox ul {
   position: relative;
   display: flex;
   gap: 20px;
 }
-#contact li {
+.contactbox li {
   list-style: none;
   color: white;
   -webkit-tap-highlight-color: transparent;
   font-size: 5px;
 }
 
-#contact a {
+.contactbox a {
   z-index: 2;
   position: relative;
   top: 0;
@@ -230,7 +239,7 @@ h1 {
   transition: top 0.5s, z-index 0s, transform 0.5s;
   transition-delay: 0.5s;
 }
-#contact a::before {
+.contactbox a::before {
   content: "";
   width: 50px;
   height: 100%;
@@ -241,17 +250,21 @@ h1 {
   transform: skewX(60deg) translateX(170px);
   transition: 0.5s;
 }
-#contact a {
+.contactbox a {
   z-index: 1;
 }
-#contact a:hover {
+.contactbox a:hover {
   z-index: 3;
   top: -50px;
   transition-delay: 0s 0.5s, 0.5s;
   transform: translateY(50px);
 }
-#contact a:hover::before {
+.contactbox a:hover::before {
   transform: skewX(45deg) translateX(-150px);
+}
+.contactbox img {
+  width: 65px;
+  height: 65px;
 }
 /**Scrollbar**/
 ::-webkit-scrollbar {
