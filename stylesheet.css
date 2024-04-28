@@ -19,9 +19,6 @@ nav a i:hover {
   color: #fffaf0;
 }
 /*home*/
-#home {
-  background-color: #f699cd;
-}
 .name {
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
@@ -46,6 +43,7 @@ nav a i:hover {
   height: 40px;
   border-radius: 50%;
 }
+
 /*about*/
 .about {
   font-size: 18px;
@@ -57,10 +55,89 @@ nav a i:hover {
   font-family: cursive;
   text-decoration: none;
 }
+/*projects*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: fantasy;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #ffffff;
+  color: #0c0a00;
+  border-radius: 3px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px #00000033;
+}
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px #00000033;
+  transition: 0.5s;
+  z-index: -1;
+}
+.card:hover::after {
+  transform: rotate(10deg);
+}
+.card:hover::before {
+  transform: rotate(20deg);
+}
+.image {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  background: #101010;
+  right: 10px;
+  bottom: 10px;
+  transition: 0.5s;
+}
+.card:hover .image {
+  bottom: 75px;
+}
+.container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.details {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 65px;
+}
+.container h2 {
+  margin-top: 5px;
+  padding: 0;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.15em;
+}
+.container p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #0c0a00;
+}
 /* contact*/
 .contact {
   position: absolute;
-  width: 60%;
+  width: 70%;
   height: 40%;
   display: flex;
   justify-content: center;
@@ -152,6 +229,10 @@ nav a i:hover {
 }
 .contact a::before {
   transform: skewX(45deg) translateX(-150px);
+}
+.contact img {
+  width: 100%;
+  height: 100%;
 }
 footer {
   background: #f699cd;
