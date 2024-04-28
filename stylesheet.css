@@ -93,6 +93,14 @@ nav a i:hover {
 .card:hover::before {
   transform: rotate(20deg);
 }
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+  .container p {
+    font-size: 13px; /* Adjust font size for smaller screens (optional) */
+  }
+}
 .image {
   position: absolute;
   z-index: 1;
