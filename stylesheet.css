@@ -97,9 +97,6 @@ nav a i:hover {
   .card {
     width: 90%; /* Adjust width for smaller screens */
   }
-  .container p {
-    font-size: 13px; /* Adjust font size for smaller screens (optional) */
-  }
 }
 .image {
   position: absolute;
