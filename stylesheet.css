@@ -4,7 +4,14 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #f2e7d4;
+  background: linear-gradient(
+    #52b2bf,
+    #e39ff6,
+    #fcbacb,
+    #fc4c4e,
+    #9867c5,
+    #63c5da
+  );
 }
 nav {
   display: flex;
