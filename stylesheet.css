@@ -5,12 +5,13 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(
-    #52b2bf,
-    #e39ff6,
-    #fcbacb,
-    #fc4c4e,
-    #9867c5,
-    #63c5da
+    #ffd6a5,
+    #fdffb6,
+    #caffbf,
+    #9bf6ff,
+    #a0c4ff,
+    #bdb2ff,
+    #ffc6ff
   );
 }
 nav {
@@ -33,11 +34,30 @@ nav a i:hover {
   text-transform: uppercase;
   color: #fcbacb;
 }
-.typewriter {
+h4 {
   text-align: center;
-  text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
+  width: 28ch;
+  animation: typing 6s steps(28) forwards,
+    blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2em;
+}
+@keyframes typing {
+  0%,
+  100% {
+    width: 0;
+  }
+  50% {
+    width: 28ch;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 .box {
   display: flex;
