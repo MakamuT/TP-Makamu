@@ -1,82 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thembisile Makamu Portfolio</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1 class="logo">Thembisile <br> Precious <br> Makamu </h1>
-        <nav>
-            <button class="menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="menu-items">
-                <a href="#home">
-                    <span class="icon"><i class="fa-solid fa-home"></i></span>
-                    <span class="text">Home</span>
-                </a>
-                <a href="#projects">
-                    <span class="icon"><i class="fa-solid fa-book"></i></span>
-                    <span class="text">Projects</span>
-                </a>
-                <a href="#about">
-                    <span class="icon"><i class="fa-solid fa-user-circle"></i></span>
-                    <span class="text">About</span>
-                </a>
-                <a href="#contact">
-                    <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                    <span class="text">Contact</span>
-                </a>
-            </div>
-        </nav>
-    </header>
-    <hr/>
-    <section id="projects">
-        <h1>My Projects</h1>
-        
-    </section>
-    <hr/>
-    <section id="contact">
-        <h1>Let's connect</h1>
-        <p>Whether you are in need of a website or just want to connect you can contact me.</p>
-            <ul>
-                <li>
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="text">Say hey on my whatsapp</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span class="text">You can also send me an email</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <span class="text">Connect and interact with my content</span>
-                    </a>
-                </li>
-            </ul>
-    </section>
-    <hr>
-    <section id="about">
-        <h1>About Me</h1>
-        <div class="card">
-            <img src="img/IMG20231225160250.jpg" alt="">
-            <div class="about-info">
-                <h2>Thembisile Precious Makamu</h2>
-                <h3>Front End Developer</h3>
-                <p>I am a 25 year old passionate web developer who is currently studying
-        with ALX Africa doing the Software Engineering program. I
-        learnt to code towards the end of 2022 out of boredom however it slowly
-        turned into a love thing.</p>
-            </div>
+      <div class="logo">
+        <h1>TM</h1>
+      </div>
+      <nav class="dropdown">
+        <button>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="items">
+          <span class="icon">
+            <a href="partnerships.html">Home</a>
+          </span>
+          <span>
+            <a href="job-matching.html">Projects</a>
+          </span>
+          <span>
+            <a href="skill-development.html">Education</a>
+          </span>
+          <span>
+            <a href="skill-development.html">Contact</a>
+          </span>
         </div>
-    </section>           
-</body>
+      </nav>
+    </header>
+    <section class="home">
+      <h1>Web developer | FrontEnd developer</h1>
+      <div class="about">
+        <img src="pp.webp" alt="profile picture" />
+        <div class="info">
+          <small>Thembisile Precious Makamu</small>
+          <p></p>
+          <small></small>
+        </div>
+      </div>
+    </section>
+    <section id="projects"></section>
+    <section id="certification"></section>
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <div class="call-card">
+        <span class="icon">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </span>
+      </div>
+    </section>
+  </body>
 </html>

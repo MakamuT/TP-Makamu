@@ -1,0 +1,84 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+body{
+    background-color: #E9E4E1;
+    color: #000302;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+     border: 8px solid #cca1c9;
+     border-radius: 50%;
+     color: #80beaf;
+     font-family:'Times New Roman', Times, serif;
+     height: 75px;
+     text-align: center;
+     width: 75px;
+}
+button{
+    background: transparent;
+    border: none;
+    color: #80beaf;
+    font-size: 30px;
+    margin: 25px 25px;
+}
+.dropdown span a{
+    display: block;
+    color: #000302;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .items{
+    background-color: #bed1e3;
+    border-radius: 13px;
+    display: none;
+    margin-left: -10px;
+    min-width: 80px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+    position: absolute;
+}
+.dropdown:hover .items{
+    display: block;
+}
+.dropdown:hover button{
+    color: #cca1c9;
+    rotate: 90deg;
+}
+.dropdown span a:hover{
+    background-color: #ffd3dd;
+}
+.about{
+    background-color: #bed1e3;
+    border-radius: 14px;
+    color: #000302;
+    cursor: pointer;
+    display: flex;
+    width: 975px;
+}
+img{
+    transition: transform .3s;
+    padding: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px;
+}
+small{
+    font-weight: 700;
+}
+p{
+    text-wrap: balance;
+}
+.about:hover img{
+    transform: scale(1.02);
+}
+h1{
+    color: #cca1c9;
+    font-weight: 800;
+    text-align: center;
+}
