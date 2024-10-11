@@ -120,6 +120,7 @@ button{
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
     text-align: center;
 }
@@ -127,6 +128,7 @@ button{
     color: #cca1c9;
     font-size: 1.5em;
     font-weight: 600;
+    margin-bottom: -6px;
 }
 .details h2 span{
     color: #432f4c;
@@ -139,6 +141,7 @@ button{
 .icons{
     display: flex;
     margin-top: 5px;
+    margin-right: 30px;
     position: relative;
 }
 .icons li{
@@ -168,6 +171,21 @@ button{
 .about .card:nth-child(2) li a:hover{
     background: #db80ff;
 }
+/* Default styles for mobile (small screens) */
+.card {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for tablets (min-width: 600px) */
+@media only screen and (min-width: 360px) {
+    .about {
+        width: 80%;
+    }
+}
+
+
+
 
 /*end home*/
 .title{
