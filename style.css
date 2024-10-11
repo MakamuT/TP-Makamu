@@ -125,7 +125,7 @@ button{
     text-align: center;
 }
 .details h2{
-    color: #cca1c9;
+    color: #fc4c4e;
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: -6px;
@@ -163,6 +163,7 @@ button{
 }
 .icons a:hover{
     background: #80beaf;
+    color: #fc4c4e;
     transform: rotate(160deg);
 }
 .about .card:nth-child(2) li a{
@@ -184,12 +185,9 @@ button{
     }
 }
 
-
-
-
 /*end home*/
 .title{
-    color: #cca1c9;
+    color: #432f4c;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: 800;
