@@ -236,8 +236,20 @@ img {
     justify-content: space-evenly;   
     gap: 20px;
 }
-.softskills{
+.sskills{
     background: #80beaf;
     border-radius: 25px;
+    color: #000302;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    font-weight: 400;
+    padding: 10px 20px;
+    line-height: 1.5;
+    
+}
+.skills h2{
+    color: #fc4c4e;
+    font-size: 30px;
     text-align: center;
+    text-decoration: underline #432f4c;
 }
