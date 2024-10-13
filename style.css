@@ -200,10 +200,13 @@ button {
   gap: 50px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .pic {
   background: #80beaf;
   border-radius: 20px;
+  box-shadow: 0 8px 30px 0 #1f26875e;
   height: 300px;
   width: 250px;
 }
@@ -226,26 +229,29 @@ img {
   height: 88%;
   width: 100%;
 }
-.projects-scroll::-webkit-scrollbar {
-  display: none;
-}
+
 
 .skills{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;   
     gap: 20px;
 }
 .sskills{
     background: #80beaf;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1 solid #ffffff2e;
     border-radius: 25px;
+    box-shadow: 0 8px 30px 0 #1f26875e;
     color: #000302;
     font-family: 'Times New Roman', Times, serif;
     font-size: 21px;
     font-weight: 400;
     padding: 10px 20px;
     line-height: 1.5;
-    
+    max-width: 190px;
 }
 .skills h2{
     color: #fc4c4e;
