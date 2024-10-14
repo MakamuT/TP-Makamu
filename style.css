@@ -197,6 +197,7 @@ button {
 .projects {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 50px;
   overflow-x: auto;
   scroll-behavior: smooth;
