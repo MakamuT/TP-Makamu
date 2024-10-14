@@ -181,7 +181,7 @@ button {
 /* Media query for tablets (min-width: 600px) */
 @media only screen and (min-width: 360px) {
   .about {
-    width: 80%;
+    width: 85%;
   }
 }
 
@@ -258,4 +258,16 @@ img {
     font-size: 30px;
     text-align: center;
     text-decoration: underline #432f4c;
+}
+
+#certification li{
+  color: #432f4c;
+  line-height: 2;
+  list-style: none;
+  text-transform: uppercase;
+}
+#certification li a{
+  color: #fc4c4e;
+  font-family: cursive;
+  text-decoration: none;
 }
