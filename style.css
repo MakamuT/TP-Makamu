@@ -28,6 +28,9 @@ body{
   overflow-x: hidden;
   padding: 5vh 15px;
 }
+body.hide-scrolling{
+  overflow: hidden;
+}
 body::before{
   background-color: #f784b3;
   content: "";
@@ -94,6 +97,10 @@ section{
 .main{
   margin: auto;
   max-width: 1200px;
+  transition: all .5s ease-in-out;
+}
+.main.fade-out{
+  opacity: 0;
 }
 .container{
   padding: 0 40px;
@@ -417,11 +424,15 @@ section{
 .portfolio-popup{
   height: 100%;
   left: 0;
-  overflow-y: auto;
   position: fixed;
   top: 0;
+  visibility: hidden;
   width: 100%;
   z-index: 200;
+}
+.portfolio-popup.open{
+  overflow-y: auto;
+  visibility: visible;
 }
 .pp-inner{
   align-items: center;
@@ -436,9 +447,16 @@ section{
   border: 1px solid rgba(255, 255, 255, 0.40);
   border-radius: 30px;
   padding: 30px;
+  opacity: 0;
   position: relative;
   max-width: 900px;
+  transform: scale(0.9);
   width: 100%;
+}
+.portfolio-popup.open .pp-content{
+  opacity: 1;
+  transform:scale(1);
+  transition: all .5s ease-in-out;
 }
 .pp-header{
   position: relative;
@@ -455,5 +473,23 @@ section{
 }
 .pp-thumbnail img{
   border-radius: 10px;
+}
+.pp-header h3{
+  font-size: 30px;
+  margin: 20px 0 15px;
+}
+.pp-body .description{
+  font-size: 18px;
+  margin: 20px 0;
+}
+.pp-body .general-info li{
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.pp-body .general-info li span{
+  font-weight: 300;
+}
+.pp-body .general-info li a{
+  color: #f784b3;
 }
 /*portfolio popup end*/
