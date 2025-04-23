@@ -97,6 +97,7 @@ section{
 .main{
   margin: auto;
   max-width: 1200px;
+  position: relative;
   transition: all .5s ease-in-out;
 }
 .main.fade-out{
@@ -119,6 +120,9 @@ section{
 .sec-padding{
   padding: 80px 0;
 }
+.flex-end{
+  justify-content: flex-end;
+}
 /*section title*/
 .section-title{
   margin-bottom: 40px;
@@ -132,7 +136,6 @@ section{
   font-family: "Winky sans", sans-serif;
 }
 /*section title end*/
-/*end universal styles*/
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
@@ -144,6 +147,57 @@ section{
 ::-webkit-scrollbar-thumb{
   background: #db80ff;
 }
+/* custom scrollbar end */
+/*end universal styles*/
+
+/*header start*/
+.header{
+  left: 0;
+  padding: 20px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header .nav-toggler{
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 15px;
+  height: 50px;
+  width: 50px;
+}
+.header .nav-toggler span{
+  background: #f784b3;
+  position: relative;
+  height: 2px;
+  width: 24px;
+}
+.header .nav-toggler span::before, .header .nav-toggler span::after{
+  background: #f784b3;
+  content: '';
+  height: 100%;
+  position: absolute;
+  transition: all .3s ease;
+  width: 100%;
+}
+.header .nav-toggler span::before{
+  left: 0;
+  transform: translateY(-8px);
+}
+.header .nav-toggler span::after{
+  right: 0;
+  transform: translateY(8px)
+}
+.header .nav-toggler:hover span::before, .header .nav-toggler span::after{
+  width: 50%;
+}
+/*header end*/
 
 /*home start*/
 .home-section{

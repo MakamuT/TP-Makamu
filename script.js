@@ -27,8 +27,9 @@ document.addEventListener("click", (e) => {
         e.preventDefault();
         togglePortfolioPopup();
         portfolioItemDetails(e.target.parentElement);
+        document.querySelector(".portfolio-popup").scrollTo(0, 0);
     }
-})
+});
 function togglePortfolioPopup(){
     document.querySelector(".portfolio-popup").classList.toggle("open");
     document.body.classList.toggle("hide-scrolling");
@@ -36,6 +37,12 @@ function togglePortfolioPopup(){
 }
 document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
 function portfolioItemDetails(portfolioItem){
-    document.querySelector("pp.thumbnail img").src =
+    document.querySelector(".pp-thumbnail img").src =
         portfolioItem.querySelector(".portfolio-item-thumbnail img").src;
+
+    document.querySelector(".pp-header h3").innerHTML =
+        portfolioItem.querySelector(".portfolio-item-title").innerHTML;
+    
+    document.querySelector(".pp-body").innerHTML =
+        portfolioItem.querySelector(".portfolio-item-details").innerHTML;
 }
