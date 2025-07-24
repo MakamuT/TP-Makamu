@@ -48,7 +48,7 @@ nav{
   color: #55768c;
 }
 .menu, .cancel{
-  color: #decdae;
+  color: #55768c;
   cursor: pointer;
   display: none;
   font-size: 2rem;
@@ -85,7 +85,7 @@ nav{
   color: #55768c;
 }
 .dropdown{
-  backdrop-filter: brightness(10%) blur(40px);
+  backdrop-filter: brightness(40%) blur(10px);
   box-shadow: 0 0 20px #372d35;
   height: auto;
   position: absolute;

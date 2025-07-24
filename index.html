@@ -26,7 +26,7 @@
           <a href="">Portfolio</a>
           <a href="">Skills</a>
           <a href="">Contact</a>
-          <i class="fa-solid fa-xmark cancel" onclick="close()"></i>
+          <i class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
         </div>
       </div>
     </nav>
@@ -62,7 +62,7 @@
         const navbar = document.querySelector('.dropdown')
         navbar.style.transform = "translateY(0px)"
       }
-      function close(){
+      function closeMenu(){
         const navbar = document.querySelector('.dropdown')
         navbar.style.transform = "translateY(-50px)"
       }
