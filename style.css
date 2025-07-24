@@ -11,11 +11,11 @@
   }
     body {
       background-image: linear-gradient(to right, #decdae ,#ffd3dd);
-      color: black;
+      color: #372d35;
       font-family: "Karla", sans-serif;
       font-size: 1.2rem;
       height: 100vh;
-      overflow: hidden;
+      /*overflow: hidden;*/
       width: 100%; 
     }
 a{
@@ -85,7 +85,7 @@ nav{
   color: #55768c;
 }
 .dropdown{
-  backdrop-filter: brigthness(10%)blur(40px);
+  backdrop-filter: brightness(10%) blur(40px);
   box-shadow: 0 0 20px #372d35;
   height: auto;
   position: absolute;
@@ -104,12 +104,12 @@ nav{
   transition: .2s linear;
 }
 .dropdown .links a:hover{
-  background-color: #faded2;
+  background-color: #ffe5ec;
 }
 
 /*home section */
 section{
-  height: 90vh;
+  height: 75vh;
   width: 100%;
 }
 .main-container{
@@ -132,19 +132,19 @@ section{
   width: 40%;
 }
 .content h1{
-  font-size: clamp(1rem, 2rem + 5vw, 3rem);
+  font-size: clamp(.5rem, 1rem + 5vw, 2rem);
 }
 .content h1 span{
-  color: #faded2;
+  color: #ffe5ec;
   text-shadow: 0 0 10px #f3a0ad;
 }
 .content .typewriter{
-  font-size: clamp(1rem, 1rem + 5vw, 3rem);
+  font-size: clamp(1rem, 1rem + 5vw, 1.5rem);
   font-weight: 600;
 }
 .content .typewriter span{
-  color: #faded2;
-  font-size: 2.5rem;
+  color: #ffe5ec;
+  font-size: 2rem;
   position: relative;
   text-shadow: 0 0 5px #f3a0ad;
   transition: .3s linear;
@@ -155,9 +155,103 @@ section{
 }
 .typewriter span::after{
   animation: cursor .6s linear;
-  border-left: 3px soild #55768c;
+  border-left: 3px solid #55768c;
   content: '';
   height: 100%;
   position: absolute;
   width: calc(100% + 8px);
+}
+@keyframes cursor{
+  to{ border-left: 3px solid #55768c}
+}
+@keyframes words{
+  0%, 33%{
+    content: 'Web Dev';
+  }
+  34%,66% {
+      content: 'Techie';
+  }
+  67%,100% {
+      content: 'Web Dev';
+    }
+}
+.content p{
+  font-size: clamp(.4rem, .2rem + 9vw, 1rem);
+  margin: 10px 0;
+}
+.social-links i{
+  align-items: center;
+  background-color: transparent;
+  border: .2rem solid #f3a0ad;
+  border-radius: 50%;
+  color: #55768c;
+  display: inline-flex;
+  font-size: 1.2rem;
+  height: 3rem;
+  justify-content: center;
+  margin: 5px 10px;
+  transition: .2s linear;
+  width: 3rem;
+}
+.social-links i:hover{
+  background-color: #f3a0ad;
+  color: #55768c;
+  filter: drop-shadow(0 0 10px #f3a0af);
+  rotate: 45deg;
+}
+.content button{
+  background-color: #55768c;
+  border: none;
+  border-radius: 5px;
+  color: #decdae;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 700;
+  height: 6vh;
+  margin: 30px;
+  outline: none;
+  transition: .2s linear;
+  width: 40%;
+}
+.content button:hover{
+  background-color: transparent;
+  border: 2px solid #55768c;
+  color: #f3a0ad;
+  font-weight: 800;
+  scale: 1.1;
+}
+
+/*responsive styles*/
+@media(max-width: 884px){
+  body{
+    overflow-y: visible;
+  }
+  nav{
+    font-size: 1.5rem;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+  }
+  .main-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-container .links{
+    display: none;
+  }
+  .menu, .cancel{
+    display: block;
+  }
+  .main-container .content{
+    width: 80%;
+  }
+  .social-links i{
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .main-container .image{
+    margin-bottom: 0px;
+    width: 80%;
+  }
 }
