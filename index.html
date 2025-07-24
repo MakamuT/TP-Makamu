@@ -19,14 +19,14 @@
           <div class="link"><a href="">Contact</a></div>
         </div>
       </div>
-      <i class="fa-solid fa-bars menu"></i>
+      <i class="fa-solid fa-bars menu" onclick="menu()"></i>
       <div class="dropdown">
         <div class="links">
           <a href="">Home</a>
           <a href="">Portfolio</a>
           <a href="">Skills</a>
           <a href="">Contact</a>
-          <i class="fa-solid fa-xmark cancel"></i>
+          <i class="fa-solid fa-xmark cancel" onclick="close()"></i>
         </div>
       </div>
     </nav>
@@ -56,5 +56,16 @@
         </div>
       </div>
     </section>
+
+    <script>
+      function menu(){
+        const navbar = document.querySelector('.dropdown')
+        navbar.style.transform = "translateY(0px)"
+      }
+      function close(){
+        const navbar = document.querySelector('.dropdown')
+        navbar.style.transform = "translateY(-50px)"
+      }
+    </script>
   </body>
 </html>
