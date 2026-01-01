@@ -448,11 +448,12 @@ footer{
 }
 .footerBottom{
   color: #372d35;
-  margin-top: -50px;
+  margin-top: 10px;
   padding: 20px;
   text-align: center;
 }
 
+/*responsive styles*/
 @media (max-width: 480px) {
   body {
     overflow-y: visible;
